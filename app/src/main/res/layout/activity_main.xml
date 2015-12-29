@@ -1,0 +1,230 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#85c8f4">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_marginTop="20dp"
+            android:text="GPS - IGNACIO FATOU" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#aaaaaa">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="ESTADO"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp" />
+            <TextView android:id="@+id/estado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="80dp"
+                android:gravity="right"
+                android:text="SIN CONEXION"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fffdc4">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="LATITUD"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp" />
+            <TextView android:id="@+id/latitud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="80dp"
+                android:gravity="right"
+                android:text="-"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#aaaaaa">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="LONGITUD"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp" />
+            <TextView android:id="@+id/longitud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="80dp"
+                android:gravity="right"
+                android:text="-"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fffdc4">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="ALTITUD"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp" />
+            <TextView android:id="@+id/altitud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="80dp"
+                android:gravity="right"
+                android:text="-"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#aaaaaa">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="PRECISION"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp" />
+            <TextView android:id="@+id/precision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="80dp"
+                android:gravity="right"
+                android:text="-"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fffdc4">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="TIME"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp" />
+            <TextView android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="80dp"
+                android:gravity="right"
+                android:text="-"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#aaaaaa">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="DIRECCION"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp" />
+            <TextView android:id="@+id/direccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="80dp"
+                android:gravity="right"
+                android:text="-"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fffdc4">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="SATELITES"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp" />
+            <TextView android:id="@+id/satelites"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="80dp"
+                android:gravity="right"
+                android:text="-"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
